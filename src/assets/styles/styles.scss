@@ -2,6 +2,36 @@
 @import "./mixins.scss";
 
 .section {
+    &.hidden {
+        .editions {
+            &-item {
+                transition: transform 0s;
+                transform: translateX(-2000px);
+            }
+        }
+
+        h2 {
+            transition: opacity 0s;
+            opacity: 0;
+        }
+
+        .dual,
+        .explore-info {
+            transition: column-gap 0s;
+            column-gap: 250%;
+        }
+
+        .video {
+            transition: transform 0s;
+            transform: scale(0);
+        }
+
+        .news,
+        .faq-item {
+            transition: transform 0s;
+            transform: translateX(-200%);
+        }
+    }
     &-main {
         padding: top 40px;
         position: relative;
@@ -257,6 +287,14 @@
         padding: 17px;
         transition: transform 0.25s ease-in-out;
         transform: translateX(0);
+
+        &:nth-child(2) {
+            transition-delay: 0.5s;
+        }
+
+        &:last-child {
+            transition-delay: 1s;
+        }
 
         &__img {
             border-radius: 6px;
@@ -685,6 +723,14 @@
         transition: transform 0.4s;
         transform: translate(0);
 
+        &:nth-child(2) {
+            transition-delay: 0.25s;
+        }
+
+        &:last-child {
+            transition-delay: 0.5s;
+        }
+
         &__header {
             width: 100%;
             justify-content: space-between;
@@ -889,6 +935,29 @@
                 transform: scale(-1, 1);
             }
         }
+    }
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+
+    &.opened {
+        transition: all 0.25s;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    &-wrapper {
+        background: linear-gradient(180deg, #30373f 0%, #000000 99.82%);
+        border-radius: 12px;
+        padding: 32px;
+        position: relative;
     }
 }
 
