@@ -10,6 +10,24 @@
       href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/images/favicon/site.webmanifest" />
   </head>
   <body>
     <section class="section section-main">
@@ -127,7 +145,7 @@
           </div>
 
           <div class="header-timer flex flex-center">
-            <span>Release</span>
+            <span>Release:</span>
 
             <div class="header-timer__values flex flex-center">
               <div class="header-timer__item">
@@ -163,8 +181,8 @@
               voluptates, dicta amet reprehenderit repellendus temporibus
               beatae.
             </div>
-            <div class="description-button">
-              <span>buy now</span>
+            <div class="description-button buy-button" data-value="0">
+              buy now
             </div>
           </div>
         </div>
@@ -174,7 +192,7 @@
     <section class="section hidden section-editions" id="editions">
       <div class="container">
         <div class="editions">
-          <h2>Editions</h2>
+          <h2 data-text="editions">Editions</h2>
 
           <div class="editions-list">
             <div class="editions-item">
@@ -194,7 +212,9 @@
               </ul>
 
               <div class="editions-item__price">19.99$</div>
-              <div class="editions-item__btn button-buy">buy now</div>
+              <div class="editions-item__btn buy-button" data-value="0">
+                buy now
+              </div>
             </div>
 
             <div class="editions-item">
@@ -214,7 +234,9 @@
               </ul>
 
               <div class="editions-item__price">19.99$</div>
-              <div class="editions-item__btn button-buy">buy now</div>
+              <div class="editions-item__btn buy-button" data-value="1">
+                buy now
+              </div>
             </div>
 
             <div class="editions-item">
@@ -234,7 +256,9 @@
               </ul>
 
               <div class="editions-item__price">29.99$</div>
-              <div class="editions-item__btn button-buy">buy now</div>
+              <div class="editions-item__btn buy-button" data-value="2">
+                buy now
+              </div>
             </div>
           </div>
         </div>
@@ -264,7 +288,7 @@
             </div>
           </div>
 
-          <div class="dual-image">
+          <div class="dual-img">
             <img src="./assets/images/dual.png" alt="dualSense" />
           </div>
         </div>
@@ -305,7 +329,7 @@
               </div>
 
               <div class="explore-switch__checkbox">
-                <input type="checkbox" name="requirements" class="check" />
+                <input type="checkbox" name="requirements" class="checkbox" />
                 <span></span>
               </div>
 
@@ -362,7 +386,7 @@
                   <li><span class="violet">DEDICATED VIDEO RAM</span>: 6 GB</li>
                 </ul>
 
-                <div class="explore-button">buy now</div>
+                <div class="explore-button buy-button">buy now</div>
               </div>
             </div>
           </div>
@@ -379,7 +403,7 @@
               </div>
 
               <div class="explore-switch__checkbox">
-                <input type="checkbox" name="versions" class="check" />
+                <input type="checkbox" name="versions" class="checkbox" />
                 <span></span>
               </div>
 
@@ -436,7 +460,7 @@
                   </li>
                 </ul>
 
-                <div class="explore-button">buy now</div>
+                <div class="explore-button buy-button">buy now</div>
               </div>
             </div>
           </div>
@@ -449,7 +473,7 @@
 
       <div class="news swiper flex-center flex">
         <div class="swiper-wrapper">
-          <div class="swiper-slide news item">
+          <div class="swiper-slide news-item">
             <div class="news-item__info flex">
               <div class="news-item__subtitle">God of War Ragnarok</div>
 
@@ -488,7 +512,7 @@
             </div>
           </div>
 
-          <div class="swiper-slide news item">
+          <div class="swiper-slide news-item">
             <div class="news-item__info flex">
               <div class="news-item__subtitle">God of War Ragnarok</div>
 
@@ -527,7 +551,7 @@
             </div>
           </div>
 
-          <div class="swiper-slide news item">
+          <div class="swiper-slide news-item">
             <div class="news-item__info flex">
               <div class="news-item__subtitle">God of War Ragnarok</div>
 
@@ -566,7 +590,7 @@
             </div>
           </div>
 
-          <div class="swiper-slide news item">
+          <div class="swiper-slide news-item">
             <div class="news-item__info flex">
               <div class="news-item__subtitle">God of War Ragnarok</div>
 
@@ -653,8 +677,8 @@
         <div class="faq-items flex">
           <div class="faq-item">
             <div class="faq-item__header flex">
-              <p>When is the nex God of War coming out?</p>
-              <span class="span flex flex-center"></span>
+              <p>When is the next God of War coming out?</p>
+              <span class="flex flex-center"></span>
             </div>
 
             <div class="faq-item__content">
@@ -670,7 +694,7 @@
           <div class="faq-item">
             <div class="faq-item__header flex">
               <p>Will God of War Ragnarok have an upgrade path?</p>
-              <span class="span flex flex-center"></span>
+              <span class="flex flex-center"></span>
             </div>
 
             <div class="faq-item__content">
@@ -681,7 +705,7 @@
           <div class="faq-item">
             <div class="faq-item__header flex">
               <p>What is God of War about?</p>
-              <span class="span flex flex-center"></span>
+              <span class="flex flex-center"></span>
             </div>
 
             <div class="faq-item__content">
@@ -750,7 +774,7 @@
     <div class="modal">
       <div class="modal-wrapper">
         <div class="modal-title">GOD OF WAR RAGNAROK</div>
-        <div class="modal-subtitle"></div>
+        <div class="modal-version"></div>
 
         <form class="form">
           <div class="form-group full">
@@ -786,14 +810,20 @@
           <div class="form-checkbox flex flex-center">
             <input type="checkbox" name="agreement" id="agreement" required />
             <span class="check"></span>
-            <label form="agreement">
+            <label for="agreement">
               I agree with the <span class="red">rules</span> of the site
             </label>
           </div>
 
-          <div class="modal-description"></div>
+          <div class="modal-description">
+            Download of this product is subject to the PlayStation Network Terms
+            of Service and our Software Usage Terms plus any specific additional
+            conditions applying to this product. If you do not wish to accept
+            these terms, do not download this product. See Terms of Service for
+            more important information.
+          </div>
 
-          <div class="modal-total flex flex=center">
+          <div class="modal-total flex flex-center">
             <div class="modal-total__text">YOUR TOTAL SUM</div>
             <div class="modal-total__price"></div>
           </div>

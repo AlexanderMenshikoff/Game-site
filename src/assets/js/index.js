@@ -19,6 +19,23 @@ const classes ={
 
 }
 
+const values = [
+    {
+        price:19.99,
+        title:'Standard Edition'
+    },
+    {
+        price:18.99,
+        title:'Standard Edition'
+    },
+    {
+        price:29.99,
+        title:'Deluxe Edition'
+    }
+]
+    
+
+
 const checkbox = document.querySelectorAll('.checkbox')
 const menuLink = document.querySelectorAll('.menu-link')
 const header = document.querySelector('.header')
@@ -28,6 +45,12 @@ const videoButton = document.querySelector('.video-btn')
 const faqItem = document.querySelectorAll('.faq-item')
 const sections = document.querySelectorAll('.section')
 const language = document.querySelectorAll('.language')
+const buyButton = document.querySelectorAll('.buy-button')
+const modal = document.querySelector('.modal')
+const modalVersionTitle = document.querySelector('.modal-version')
+const modalPrice = document.querySelector('.modal-total__price')
+const modalClose = document.querySelector('.modal-close')
+const overlay = document.querySelector('.overlay')
 
 const toggleMenu = () => header.classList.toggle(classes.opened)
 
@@ -138,7 +161,7 @@ const setTexts = () => {
     const content = languages[lang]
 
     Object.entries(content).forEach(([key, value]) => {
-        const items = document.querySelectorAll(`[data-text=${key}]`)
+        const items = document.querySelectorAll(`[data-text="${key}"]`)
         items.forEach((item) =>(item.innerText = value) )
     })
 }
@@ -151,12 +174,36 @@ const toggleLanguage = ({target}) => {
     localStorage.setItem('lang', lang)
     setTexts()
 }
+
+const handleBuyButton = ({currentTarget: target}) => {
+    const {value} = target.dataset
+
+    if(!value) return
+
+    const {price, title} = values[value]
+
+    modalVersionTitle.innerText = title
+    modalPrice.innerText = `${price}$`
+    modal.classList.add(classes.opened)
+    overlay.classList.add(classes.opened)
+
+
+}
+
+const closeModal = () => {
+    modal.classList.remove(classes.opened)
+    overlay.classList.remove(classes.opened)
+}
+
+setTexts()
 initSlider()
 startTimer('December 31, 2022 00:00:00')
 window.addEventListener('scroll', handleScroll)
 menuButton.addEventListener('click', toggleMenu)
 videoButton.addEventListener('click', handleVideo)
+modalClose.addEventListener('click', closeModal)
 menuLink.forEach((link) => link.addEventListener('click', scrollToSection))
 checkbox.forEach((box) => box.addEventListener('click', handleCheckbox))
 faqItem.forEach((item) => item.addEventListener('click', handleFaqItem))
 language.forEach((lang) => lang.addEventListener('click', toggleLanguage))
+buyButton.forEach((btn) => btn.addEventListener('click', handleBuyButton))
