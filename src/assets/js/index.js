@@ -31,6 +31,10 @@ const values = [
     {
         price:29.99,
         title:'Deluxe Edition'
+    },
+    {
+        price:35.99,
+        title:'DualSense Edition'
     }
 ]
     
@@ -46,11 +50,15 @@ const faqItem = document.querySelectorAll('.faq-item')
 const sections = document.querySelectorAll('.section')
 const language = document.querySelectorAll('.language')
 const buyButton = document.querySelectorAll('.buy-button')
+const dualBuyButton = document.querySelector('.dual-description__button')
 const modal = document.querySelector('.modal')
 const modalVersionTitle = document.querySelector('.modal-version')
 const modalPrice = document.querySelector('.modal-total__price')
 const modalClose = document.querySelector('.modal-close')
 const overlay = document.querySelector('.overlay')
+
+
+
 
 const toggleMenu = () => header.classList.toggle(classes.opened)
 
@@ -117,7 +125,6 @@ const handleCheckbox = ({currentTarget:{checked, name}}) => {
     const list = document.getElementById(value)
     const tabs = document.querySelectorAll(`[data-${name}]`)
     const siblings = list.parentElement.children
-
     for(const item of siblings) item.classList.remove(active)
     for(const tab of tabs){
         tab.classList.remove(active)
@@ -207,3 +214,8 @@ checkbox.forEach((box) => box.addEventListener('click', handleCheckbox))
 faqItem.forEach((item) => item.addEventListener('click', handleFaqItem))
 language.forEach((lang) => lang.addEventListener('click', toggleLanguage))
 buyButton.forEach((btn) => btn.addEventListener('click', handleBuyButton))
+dualBuyButton.addEventListener('click', yo)
+
+
+
+

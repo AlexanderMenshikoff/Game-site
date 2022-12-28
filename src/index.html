@@ -90,7 +90,9 @@
                 </li>
                 <li>
                   <div class="header-menu__link lang">
-                    <span class="current-lang">english</span>
+                    <span class="current-lang" data-text="headerLanguage"
+                      >english</span
+                    >
 
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -145,27 +147,35 @@
           </div>
 
           <div class="header-timer flex flex-center">
-            <span>Release:</span>
+            <span data-text="release">Release:</span>
 
             <div class="header-timer__values flex flex-center">
               <div class="header-timer__item">
                 <div class="header-timer__item-value" id="days">0</div>
-                <div class="header-timer__item-info">D</div>
+                <div class="header-timer__item-info" data-text="daysTimer">
+                  D
+                </div>
               </div>
 
               <div class="header-timer__item">
                 <div class="header-timer__item-value" id="hours">0</div>
-                <div class="header-timer__item-info">H</div>
+                <div class="header-timer__item-info" data-text="hoursTimer">
+                  H
+                </div>
               </div>
 
               <div class="header-timer__item">
                 <div class="header-timer__item-value" id="minutes">0</div>
-                <div class="header-timer__item-info">M</div>
+                <div class="header-timer__item-info" data-text="monthsTimer">
+                  M
+                </div>
               </div>
 
               <div class="header-timer__item">
                 <div class="header-timer__item-value" id="seconds">0</div>
-                <div class="header-timer__item-info">S</div>
+                <div class="header-timer__item-info" data-text="secondsTimer">
+                  S
+                </div>
               </div>
             </div>
           </div>
@@ -173,15 +183,17 @@
 
         <div class="description">
           <div class="description-title">
-            <h1>Game</h1>
-            <div class="description-subtitle">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
-              impedit. Perspiciatis quas quo tenetur porro, facilis sit
-              assumenda labore, consequuntur sunt corrupti consectetur
-              voluptates, dicta amet reprehenderit repellendus temporibus
-              beatae.
+            <h1>God of War Ragnarök</h1>
+            <div class="description-subtitle" data-text="descriptionSubtitle">
+              Taking place three years following the events of the previous
+              game, Fimbulwinter, a great winter that spans three summers, is
+              drawing to a close which will begin the prophesied Ragnarök.
             </div>
-            <div class="description-button buy-button" data-value="0">
+            <div
+              class="description-button buy-button"
+              data-value="0"
+              data-text="buyNowBtn"
+            >
               buy now
             </div>
           </div>
@@ -192,7 +204,7 @@
     <section class="section hidden section-editions" id="editions">
       <div class="container">
         <div class="editions">
-          <h2 data-text="editions">Editions</h2>
+          <h2 data-text="editionsTitle">Editions</h2>
 
           <div class="editions-list">
             <div class="editions-item">
@@ -201,18 +213,29 @@
                 style="background-image: url(./assets/images/card1.png)"
               ></div>
 
-              <div class="editions-item__title">Standard edition</div>
+              <div
+                class="editions-item__title"
+                data-text="standardEditionTitle"
+              >
+                Standard edition
+              </div>
 
               <div class="editions-item__subtitle">PS5</div>
 
               <ul class="editions-item__description">
-                <li>Offline play enabled</li>
-                <li>Remote Play supported</li>
-                <li>Trigger effect required</li>
+                <li data-text="offlinePlayEnabled">Offline play enabled</li>
+                <li data-text="remotePlaySupported">Remote Play supported</li>
+                <li data-text="triggerEffectRequired">
+                  Trigger effect required
+                </li>
               </ul>
 
               <div class="editions-item__price">19.99$</div>
-              <div class="editions-item__btn buy-button" data-value="0">
+              <div
+                class="editions-item__btn buy-button"
+                data-value="0"
+                data-text="buyNowBtn"
+              >
                 buy now
               </div>
             </div>
@@ -223,18 +246,29 @@
                 style="background-image: url(./assets/images/card1.png)"
               ></div>
 
-              <div class="editions-item__title">Standard edition</div>
+              <div
+                class="editions-item__title"
+                data-text="standardEditionTitle"
+              >
+                Standard edition
+              </div>
 
               <div class="editions-item__subtitle">PS4</div>
 
               <ul class="editions-item__description">
-                <li>Offline play enabled</li>
-                <li>Remote Play supported</li>
-                <li>Trigger effect required</li>
+                <li data-text="offlinePlayEnabled">Offline play enabled</li>
+                <li data-text="remotePlaySupported">Remote Play supported</li>
+                <li data-text="triggerEffectRequired">
+                  Trigger effect required
+                </li>
               </ul>
 
               <div class="editions-item__price">19.99$</div>
-              <div class="editions-item__btn buy-button" data-value="1">
+              <div
+                class="editions-item__btn buy-button"
+                data-value="1"
+                data-text="buyNowBtn"
+              >
                 buy now
               </div>
             </div>
@@ -245,18 +279,31 @@
                 style="background-image: url(./assets/images/card3.png)"
               ></div>
 
-              <div class="editions-item__title">Digital Deluxe Edition</div>
+              <div
+                class="editions-item__title"
+                data-text="digitalDeluxeEdition"
+              >
+                Digital Deluxe Edition
+              </div>
 
               <div class="editions-item__subtitle">PS5</div>
 
               <ul class="editions-item__description">
-                <li>All features of Standard Edition</li>
-                <li>Darkdale Armour</li>
-                <li>Official digital soundtrack</li>
+                <li data-text="allFeaturesOfStandardEdition">
+                  All features of Standard Edition
+                </li>
+                <li data-text="darkdaleArmour">Darkdale Armour</li>
+                <li data-text="officialDigitalSoundtrack">
+                  Official digital soundtrack
+                </li>
               </ul>
 
               <div class="editions-item__price">29.99$</div>
-              <div class="editions-item__btn buy-button" data-value="2">
+              <div
+                class="editions-item__btn buy-button"
+                data-value="2"
+                data-text="buyNowBtn"
+              >
                 buy now
               </div>
             </div>
@@ -267,22 +314,27 @@
 
     <section class="section hidden section-dual" id="controller">
       <div class="container">
-        <h2>DualSense</h2>
+        <h2 data-text="dualSenseTitle">DualSense</h2>
 
-        <div class="dual flex flex-container">
+        <div class="dual flex flex-center">
           <div class="dual-description">
-            <p>
+            <p data-text="dualDescription1">
               You can also buy an exclusive controller with the
-              <span class="violet">God of War Ragnarok</span> theme for PS5
+              <span class="violet">God of War Ragnarok</span>
+              theme for PS5
             </p>
-            <p>
+            <p data-text="dualDescription2">
               If you purchase a controller and a game (any edition), you will
               receive a <span class="orange">15%</span> discount on two items.
             </p>
 
             <div class="dual-description__info flex">
               <div class="dual-description__price">35.99$</div>
-              <div class="dual-description__button">
+              <div
+                class="dual-description__button"
+                data-text="dualBuyBtn"
+                data-value="3"
+              >
                 buy dualsense with a game
               </div>
             </div>
@@ -296,12 +348,14 @@
     </section>
 
     <section class="section hidden section-about" id="about">
-      <h2>About game</h2>
+      <h2 data-text="aboutGameTitle">About game</h2>
 
       <div class="video">
         <div class="video-info">
-          <div class="video-title">Watch the Trailer</div>
-          <div class="video-btn">play</div>
+          <div class="video-title" data-text="watchTrailer">
+            Watch the Trailer
+          </div>
+          <div class="video-btn" data-text="playBtn">play</div>
         </div>
 
         <video
@@ -314,16 +368,19 @@
 
     <section class="section hidden section-explore" id="explore">
       <div class="container">
-        <h2>Explore the God of War series</h2>
+        <h2 data-text="exploreHeader">Explore the God of War series</h2>
 
         <div class="explore-items">
           <div class="explore-item">
-            <h3>Here are the God of War (PC) System Requirements</h3>
+            <h3 data-text="systemRequirementHeader">
+              Here are the God of War (PC) System Requirements
+            </h3>
 
             <div class="explore-switch flex flex-center">
               <div
                 class="explore-switch__title active"
                 data-requirements="minimum"
+                data-text="minimumRequirement"
               >
                 Minimum
               </div>
@@ -336,6 +393,7 @@
               <div
                 class="explore-switch__title"
                 data-requirements="recommended"
+                data-text="recommendedRequirement"
               >
                 Recommended
               </div>
@@ -354,50 +412,104 @@
               <div class="explore-description">
                 <ul class="explore-list active" id="minimum">
                   <li>
-                    <span class="violet">CPU</span>: Intel i5-2500k (4 core 3.3
-                    GHz) or AMD Ryzen 3 1200 (4 core 3.1 GHz)
+                    <span class="violet" data-text="CPU">CPU</span>:
+                    <a data-text="cpuMinimum"
+                      >Intel i5-2500k (4 core 3.3 GHz) or AMD Ryzen 3 1200 (4
+                      core 3.1 GHz)</a
+                    >
                   </li>
-                  <li><span class="violet">RAM</span>: 8 GB</li>
-                  <li><span class="violet">OS</span>: Windows 10 64-bit</li>
+                  <li><span class="violet" data-text="RAM">RAM</span>: 8 GB</li>
                   <li>
-                    <span class="violet">VIDEOCARD</span>: NVIDIA GTX 960 (4 GB)
-                    or AMD R9 290X (4 GB)
+                    <span class="violet" data-text="OS">OS</span>: Windows 10
+                    64-bit
                   </li>
-                  <li><span class="violet">PIXEL SHADER</span>: 5.1</li>
-                  <li><span class="violet">VERTEX SHADER</span>: 5.1</li>
-                  <li><span class="violet">FREE DISK SPACE</span>: 70 GB</li>
-                  <li><span class="violet">DEDICATED VIDEO RAM</span>: 4 GB</li>
+                  <li>
+                    <span class="violet" data-text="videocard">VIDEOCARD</span
+                    >:<a data-text="videocardMinimum"
+                      >NVIDIA GTX 960 (4 GB) or AMD R9 290X (4 GB)</a
+                    >
+                  </li>
+                  <li>
+                    <span class="violet" data-text="pixelShader"
+                      >PIXEL SHADER</span
+                    >: 5.1
+                  </li>
+                  <li>
+                    <span class="violet" data-text="vertexShader"
+                      >VERTEX SHADER</span
+                    >: 5.1
+                  </li>
+                  <li>
+                    <span class="violet" data-text="freeDiskSpace"
+                      >FREE DISK SPACE</span
+                    >: 70 GB
+                  </li>
+                  <li>
+                    <span class="violet" data-text="dedicatedVideoRam"
+                      >DEDICATED VIDEO RAM</span
+                    >: 4 GB
+                  </li>
                 </ul>
 
                 <ul class="explore-list" id="recommended">
                   <li>
-                    <span class="violet">CPU</span>: Intel i5-2500k or AMD Ryzen
-                    5 1200
+                    <span class="violet" data-text="CPU">CPU</span>:
+                    <a data-text="cpuRecommended"
+                      >Intel i5-2500k or AMD Ryzen 5 1200</a
+                    >
                   </li>
-                  <li><span class="violet">RAM</span>: 8 GB</li>
-                  <li><span class="violet">OS</span>: Windows 11 64-bit</li>
+                  <li><span class="violet" data-text="RAM">RAM</span>: 8 GB</li>
                   <li>
-                    <span class="violet">VIDEOCARD</span>: NVIDIA GTX 1060 (6
-                    GB) or AMD RX 570 (4 GB)
+                    <span class="violet" data-text="OS">OS</span>: Windows 11
+                    64-bit
                   </li>
-                  <li><span class="violet">PIXEL SHADER</span>: 5.1</li>
-                  <li><span class="violet">VERTEX SHADER</span>: 5.1</li>
-                  <li><span class="violet">FREE DISK SPACE</span>: 70 GB</li>
-                  <li><span class="violet">DEDICATED VIDEO RAM</span>: 6 GB</li>
+                  <li>
+                    <span class="violet" data-text="videocard">VIDEOCARD</span
+                    >:<a data-text="videocardRecommended">
+                      NVIDIA GTX 1060 (6 GB) or AMD RX 570 (4 GB)</a
+                    >
+                  </li>
+                  <li>
+                    <span class="violet" data-text="pixelShader"
+                      >PIXEL SHADER</span
+                    >: 5.1
+                  </li>
+                  <li>
+                    <span class="violet" data-text="vertexShader"
+                      >VERTEX SHADER</span
+                    >: 5.1
+                  </li>
+                  <li>
+                    <span class="violet" data-text="freeDiskSpace"
+                      >FREE DISK SPACE</span
+                    >: 70 GB
+                  </li>
+                  <li>
+                    <span class="violet" data-text="dedicatedVideoRam">
+                      DEDICATED VIDEO RAM</span
+                    >: 6 GB
+                  </li>
                 </ul>
 
-                <div class="explore-button buy-button">buy now</div>
+                <div
+                  class="explore-button buy-button"
+                  data-text="buyNowBtn"
+                  data-value="1"
+                >
+                  buy now
+                </div>
               </div>
             </div>
           </div>
 
           <div class="explore-item">
-            <h3>God of war for PS4</h3>
+            <h3 data-text="explorePS4">God of war for PS4</h3>
 
             <div class="explore-switch flex flex-center">
               <div
                 class="explore-switch__title active"
                 data-versions="standard"
+                data-text="standardVersionPs4"
               >
                 Standard
               </div>
@@ -407,12 +519,16 @@
                 <span></span>
               </div>
 
-              <div class="explore-switch__title" data-versions="limited">
+              <div
+                class="explore-switch__title"
+                data-versions="limited"
+                data-text="LimitedVersionPs4"
+              >
                 Limited
               </div>
             </div>
 
-            <div class="explore-item__price">15.99$</div>
+            <div class="explore-item__price"></div>
 
             <div class="explore-info flex flex-center reverse">
               <div class="explore-img">
@@ -426,41 +542,73 @@
 
               <div class="explore-description">
                 <ul class="explore-list active" id="standard">
-                  <li><span class="violet">Platform</span>: PS4</li>
-                  <li><span class="violet">Premiere</span>: 20.4.2018</li>
                   <li>
-                    <span class="violet">Publisher</span>: Sony Interactive
-                    Entertainment Europe
+                    <span class="violet" data-text="platform">Platform</span>:
+                    PS4
                   </li>
                   <li>
-                    <span class="violet">Species</span>: Action, Adventure
+                    <span class="violet" data-text="premiere">Premiere</span>:
+                    20.4.2018
                   </li>
-                  <li><span class="violet">Voice</span>: English</li>
                   <li>
-                    <span class="violet">Display languages</span>: English
+                    <span class="violet" data-text="publisher">Publisher</span>:
+                    Sony Interactive Entertainment Europe
+                  </li>
+                  <li>
+                    <span class="violet" data-text="species">Species</span>:<a
+                      data-text="speciesStandard"
+                      >Action, Adventure</a
+                    >
+                  </li>
+                  <li>
+                    <span class="violet" data-text="voice">Voice</span>:
+                    <a data-text="voiceStandard">English</a>
+                  </li>
+                  <li>
+                    <span class="violet" data-text="displayLanguages">
+                      Display languages</span
+                    >: <a data-text="standardDisplayLanguages">English</a>
                   </li>
                 </ul>
 
                 <ul class="explore-list" id="limited">
-                  <li><span class="violet">Platform</span>: PS4, PS5</li>
-                  <li><span class="violet">Premiere</span>: 20.4.2018</li>
                   <li>
-                    <span class="violet">Publisher</span>: Sony Interactive
-                    Entertainment Europe
+                    <span class="violet" data-text="platform">Platform</span>:
+                    PS4, PS5
                   </li>
                   <li>
-                    <span class="violet">Species</span>: Action, Adventure
+                    <span class="violet" data-text="premiere">Premiere</span>:
+                    20.4.2018
                   </li>
                   <li>
-                    <span class="violet">Voice</span>: English, Polish, Russian
+                    <span class="violet" data-text="publisher">Publisher</span>:
+                    Sony Interactive Entertainment Europe
                   </li>
                   <li>
-                    <span class="violet">Display languages</span>: English,
-                    Dutch, Polish, Russian, Turkish
+                    <span class="violet" data-text="species">Species</span>:
+                    <a data-text="speciesLimited">Action, Adventure</a>
+                  </li>
+                  <li>
+                    <span class="violet" data-text="voice">Voice</span>:
+                    <a data-text="voiceLanguages">English, Polish, Russian</a>
+                  </li>
+                  <li>
+                    <span class="violet" data-text="displayLanguages"
+                      >Display languages</span
+                    >:
+                    <a data-text="limitedDisplayLanguages"
+                      >English, Dutch, Polish, Russian, Turkish</a
+                    >
                   </li>
                 </ul>
 
-                <div class="explore-button buy-button">buy now</div>
+                <div
+                  class="explore-button buy-button"
+                  data-text="buyNowBtn"
+                  data-value="2"
+                >
+                  buy now
+                </div>
               </div>
             </div>
           </div>
@@ -469,7 +617,7 @@
     </section>
 
     <section class="section hidden section-news" id="news">
-      <h2>News</h2>
+      <h2 data-text="newsHeader">News</h2>
 
       <div class="news swiper flex-center flex">
         <div class="swiper-wrapper">
@@ -480,7 +628,7 @@
               <div class="news-item__date">19/10/2022</div>
             </div>
 
-            <div class="news-item__title">
+            <div class="news-item__title" data-text="newsTitle">
               Will receive a large update on release
             </div>
 
@@ -491,23 +639,20 @@
               ></div>
 
               <div class="news-item__text flex">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-                  quaerat magni maiores, explicabo velit eum asperiores
-                  laboriosam quod consequuntur nemo expedita sit dolorum
-                  pariatur error, nisi eius placeat a sequi, saepe eaque.
-                  Voluptatem cum ratione dignissimos eveniet. Sapiente eveniet
-                  autem saepe, ducimus ad delectus eos itaque inventore quis
-                  assumenda consequuntur nesciunt provident eaque explicabo, ex
-                  quidem sint porro quae labore repellat at recusandae, quos hic
-                  dicta. Dolores doloremque vitae\ commodi ducimus, tempore sint
-                  est minima asperiores architecto dolorem nesciunt repellat nam
-                  harum neque! Tempora sunt culpa nam, ipsam excepturi et, unde
-                  deserunt dolorem voluptate earum ut voluptates assumenda quam
-                  velit.
+                <p data-text="newsText1">
+                  God of War: Ragnarok is fast approaching. No wonder that we
+                  have been regularly receiving new information and materials
+                  related to the title in recent times. Last week, a trailer
+                  presenting the possibilities of the game on PlayStation 5 hit
+                  the network , and a little earlier we learned that the work on
+                  the production was completed . Meanwhile, it turns out that
+                  the upcoming sequel to the adventures of Kratos and Atreus
+                  will receive a major update on release.
                 </p>
 
-                <a href="#" class="news-item__button"> read</a>
+                <a href="#" class="news-item__button" data-text="readBtn">
+                  read</a
+                >
               </div>
             </div>
           </div>
@@ -519,7 +664,7 @@
               <div class="news-item__date">19/10/2022</div>
             </div>
 
-            <div class="news-item__title">
+            <div class="news-item__title" data-text="newsTitle">
               Will receive a large update on release
             </div>
 
@@ -530,23 +675,18 @@
               ></div>
 
               <div class="news-item__text flex">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-                  quaerat magni maiores, explicabo velit eum asperiores
-                  laboriosam quod consequuntur nemo expedita sit dolorum
-                  pariatur error, nisi eius placeat a sequi, saepe eaque.
-                  Voluptatem cum ratione dignissimos eveniet. Sapiente eveniet
-                  autem saepe, ducimus ad delectus eos itaque inventore quis
-                  assumenda consequuntur nesciunt provident eaque explicabo, ex
-                  quidem sint porro quae labore repellat at recusandae, quos hic
-                  dicta. Dolores doloremque vitae\ commodi ducimus, tempore sint
-                  est minima asperiores architecto dolorem nesciunt repellat nam
-                  harum neque! Tempora sunt culpa nam, ipsam excepturi et, unde
-                  deserunt dolorem voluptate earum ut voluptates assumenda quam
-                  velit.
+                <p data-text="newsText2">
+                  Digital distribution enthusiasts need to get ready for tons of
+                  downloads. The second adventure of Kratos and Atreus in the
+                  High North from the premiere will occupy nearly 120GB - when
+                  deciding to buy a title from PlayStation Store, it is worth
+                  planning your download wisely to start the game on the day of
+                  the premiere.
                 </p>
 
-                <a href="#" class="news-item__button"> read</a>
+                <a href="#" class="news-item__button" data-text="readBtn">
+                  read</a
+                >
               </div>
             </div>
           </div>
@@ -558,7 +698,7 @@
               <div class="news-item__date">19/10/2022</div>
             </div>
 
-            <div class="news-item__title">
+            <div class="news-item__title" data-text="newsTitle">
               Will receive a large update on release
             </div>
 
@@ -569,23 +709,19 @@
               ></div>
 
               <div class="news-item__text flex">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-                  quaerat magni maiores, explicabo velit eum asperiores
-                  laboriosam quod consequuntur nemo expedita sit dolorum
-                  pariatur error, nisi eius placeat a sequi, saepe eaque.
-                  Voluptatem cum ratione dignissimos eveniet. Sapiente eveniet
-                  autem saepe, ducimus ad delectus eos itaque inventore quis
-                  assumenda consequuntur nesciunt provident eaque explicabo, ex
-                  quidem sint porro quae labore repellat at recusandae, quos hic
-                  dicta. Dolores doloremque vitae\ commodi ducimus, tempore sint
-                  est minima asperiores architecto dolorem nesciunt repellat nam
-                  harum neque! Tempora sunt culpa nam, ipsam excepturi et, unde
-                  deserunt dolorem voluptate earum ut voluptates assumenda quam
-                  velit.
+                <p data-text="newsText3">
+                  The highly anticipated game God of War: Ragnarok will debut in
+                  just over twenty days. On this occasion, representatives of
+                  the Santa Monica studio together with Sony decided to release
+                  a new trailer dedicated to the epic history of Kratos and
+                  Atreus - in this way we have received confirmation that
+                  Ragnarok is the final chapter of the adventures of the god of
+                  war.
                 </p>
 
-                <a href="#" class="news-item__button"> read</a>
+                <a href="#" class="news-item__button" data-text="readBtn">
+                  read</a
+                >
               </div>
             </div>
           </div>
@@ -597,7 +733,7 @@
               <div class="news-item__date">19/10/2022</div>
             </div>
 
-            <div class="news-item__title">
+            <div class="news-item__title" data-text="newsTitle">
               Will receive a large update on release
             </div>
 
@@ -608,23 +744,20 @@
               ></div>
 
               <div class="news-item__text flex">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-                  quaerat magni maiores, explicabo velit eum asperiores
-                  laboriosam quod consequuntur nemo expedita sit dolorum
-                  pariatur error, nisi eius placeat a sequi, saepe eaque.
-                  Voluptatem cum ratione dignissimos eveniet. Sapiente eveniet
-                  autem saepe, ducimus ad delectus eos itaque inventore quis
-                  assumenda consequuntur nesciunt provident eaque explicabo, ex
-                  quidem sint porro quae labore repellat at recusandae, quos hic
-                  dicta. Dolores doloremque vitae\ commodi ducimus, tempore sint
-                  est minima asperiores architecto dolorem nesciunt repellat nam
-                  harum neque! Tempora sunt culpa nam, ipsam excepturi et, unde
-                  deserunt dolorem voluptate earum ut voluptates assumenda quam
-                  velit.
+                <p data-text="newsText1">
+                  God of War: Ragnarok is fast approaching. No wonder that we
+                  have been regularly receiving new information and materials
+                  related to the title in recent times. Last week, a trailer
+                  presenting the possibilities of the game on PlayStation 5 hit
+                  the network , and a little earlier we learned that the work on
+                  the production was completed . Meanwhile, it turns out that
+                  the upcoming sequel to the adventures of Kratos and Atreus
+                  will receive a major update on release.
                 </p>
 
-                <a href="#" class="news-item__button"> read</a>
+                <a href="#" class="news-item__button" data-text="readBtn">
+                  read</a
+                >
               </div>
             </div>
           </div>
@@ -672,17 +805,19 @@
 
     <section class="section hidden section-faq" id="faq">
       <div class="container">
-        <h2>FAQ</h2>
+        <h2 data-text="faqTitle">FAQ</h2>
 
         <div class="faq-items flex">
           <div class="faq-item">
             <div class="faq-item__header flex">
-              <p>When is the next God of War coming out?</p>
+              <p data-text="question1">
+                When is the next God of War coming out?
+              </p>
               <span class="flex flex-center"></span>
             </div>
 
             <div class="faq-item__content">
-              <p>
+              <p data-text="answer1">
                 God of War Ragnarök will release on
                 <span>November 9, 2022</span>. To get the latest updates on
                 release timing, make sure you follow Santa Monica Studio on
@@ -693,28 +828,30 @@
 
           <div class="faq-item">
             <div class="faq-item__header flex">
-              <p>Will God of War Ragnarok have an upgrade path?</p>
+              <p data-text="question2">
+                Will God of War Ragnarok have an upgrade path?
+              </p>
               <span class="flex flex-center"></span>
             </div>
 
             <div class="faq-item__content">
-              <p>Yes, of course!</p>
+              <p data-text="answer2">Yes, of course!</p>
             </div>
           </div>
 
           <div class="faq-item">
             <div class="faq-item__header flex">
-              <p>What is God of War about?</p>
+              <p data-text="question3">What is God of War about?</p>
               <span class="flex flex-center"></span>
             </div>
 
             <div class="faq-item__content">
-              <p>
+              <p data-text="answer3">
                 First era (Greek mythology) God of War was first released in
                 North America on March 22, 2005, for the PlayStation 2. After
                 ten years in the service of the Olympian gods, Spartan soldier
                 Kratos is tasked by Athena to find Pandora's box, the key to
-                defeating Ares, the God of War, who is running amok through
+                defeating Ares, the God of War, who is running among through
                 Athens.
               </p>
             </div>
@@ -728,29 +865,59 @@
         <div class="footer-top flex">
           <ul class="footer-menu flex flex-center">
             <li></li>
-            <li><a href="#editions" class="menu-link">editions</a></li>
-            <li><a href="#controller" class="menu-link">controller</a></li>
-            <li><a href="#about" class="menu-link">about game</a></li>
-            <li><a href="#explore" class="menu-link">explore</a></li>
-            <li><a href="news" class="menu-link">news</a></li>
-            <li><a href="faq" class="menu-link">FAQ</a></li>
+            <li>
+              <a href="#editions" class="menu-link" data-text="editions"
+                >editions</a
+              >
+            </li>
+            <li>
+              <a href="#controller" class="menu-link" data-text="controller"
+                >controller</a
+              >
+            </li>
+            <li>
+              <a href="#about" class="menu-link" data-text="about"
+                >about game</a
+              >
+            </li>
+            <li>
+              <a href="#explore" class="menu-link" data-text="explore"
+                >explore</a
+              >
+            </li>
+            <li><a href="news" class="menu-link" data-text="news">news</a></li>
+            <li><a href="faq" class="menu-link" data-text="faq">FAQ</a></li>
           </ul>
 
           <div class="footer-lang flex">
-            <span>Language:</span>
+            <span data-text="footerLanguage">Language:</span>
 
             <div class="footer-lang__list">
-              <div class="footer-lang__current">english</div>
+              <div class="footer-lang__current" data-text="currentLang">
+                english
+              </div>
 
               <div class="footer-lang__content">
-                <div class="footer-lang__content-item">Russian</div>
-                <div class="footer-lang__content-item">English</div>
+                <div
+                  class="footer-lang__content-item language"
+                  data-text="russianLangFooter"
+                  data-lang="ru"
+                >
+                  Russian
+                </div>
+                <div
+                  class="footer-lang__content-item language"
+                  data-text="eng-lang"
+                  data-lang="en"
+                >
+                  English
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="footer-info">
+        <div class="footer-info" data-text="footerInfo">
           Download of this product is subject to the PlayStation Network Terms
           of Service and our Software Usage Terms plus any specific additional
           conditions applying to this product. If you do not wish to accept
@@ -763,7 +930,7 @@
         </div>
 
         <div class="footer-year">2022</div>
-        <div class="footer-rights">
+        <div class="footer-rights" data-text="rights">
           Developed by
           <a href="https://github.com/AlexanderMenshikoff">Menshikoff</a>. All
           rights reserved.
@@ -778,7 +945,7 @@
 
         <form class="form">
           <div class="form-group full">
-            <label for="card">Credit Card:</label>
+            <label for="card" data-text="creditCard">Credit Card:</label>
             <input
               type="text"
               required
@@ -788,7 +955,7 @@
           </div>
 
           <div class="form-group">
-            <label for="expire">expire:</label>
+            <label for="expire" data-text="expire">expire:</label>
             <input type="text" required placeholder="mm/yy" id="expire" />
           </div>
 
@@ -798,7 +965,7 @@
           </div>
 
           <div class="form-group full">
-            <label for="instant">INSTANT:</label>
+            <label for="instant" data-text="instant">INSTANT:</label>
             <input
               type="text"
               required
@@ -810,12 +977,12 @@
           <div class="form-checkbox flex flex-center">
             <input type="checkbox" name="agreement" id="agreement" required />
             <span class="check"></span>
-            <label for="agreement">
+            <label for="agreement" data-text="agreement">
               I agree with the <span class="red">rules</span> of the site
             </label>
           </div>
 
-          <div class="modal-description">
+          <div class="modal-description" data-text="modalDescription">
             Download of this product is subject to the PlayStation Network Terms
             of Service and our Software Usage Terms plus any specific additional
             conditions applying to this product. If you do not wish to accept
@@ -824,11 +991,15 @@
           </div>
 
           <div class="modal-total flex flex-center">
-            <div class="modal-total__text">YOUR TOTAL SUM</div>
+            <div class="modal-total__text" data-text="totalSum">
+              YOUR TOTAL SUM
+            </div>
             <div class="modal-total__price"></div>
           </div>
 
-          <button type="submit" class="modal-submit">buy NOW</button>
+          <button type="submit" class="modal-submit" data-text="buyNowBtn">
+            buy NOW
+          </button>
         </form>
 
         <div class="modal-close">x</div>

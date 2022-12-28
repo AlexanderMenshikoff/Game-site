@@ -134,6 +134,7 @@
                 opacity: 0;
             }
         }
+
         &__link {
             position: relative;
             color: rgba(255, 255, 255, 0.5);
@@ -149,7 +150,7 @@
                 cursor: pointer;
 
                 &:hover {
-                    .header-menu-languages {
+                    .header-menu__languages {
                         display: block;
                     }
                 }
@@ -356,7 +357,6 @@
     column-gap: 5%;
     margin-top: 20px;
     transition: column-gap 0.5s;
-    justify-content: center;
 
     &-description {
         max-width: 410px;
@@ -601,7 +601,7 @@
             }
 
             img {
-                min-width: unset;
+                max-width: unset;
                 position: absolute;
                 bottom: 0;
                 left: 0;
@@ -687,6 +687,8 @@
         &__text {
             flex-direction: column;
             height: 100%;
+            overflow: auto;
+            text-overflow: ellipsis;
 
             p {
                 color: #d9d9d9;
@@ -972,7 +974,7 @@
             position: absolute;
             bottom: 0;
             right: 0;
-            z-index: -1px;
+            z-index: -1;
             background: url(../images/modal.png) no-repeat center/cover;
         }
     }
@@ -989,7 +991,7 @@
 
     &-title {
         font-weight: 700;
-        font-style: 18px;
+        font-size: 18px;
         line-height: 21px;
         text-align: center;
         color: $violet;
@@ -997,7 +999,7 @@
 
     &-version {
         font-weight: 500;
-        font-style: 15px;
+        font-size: 15px;
         line-height: 25px;
         text-align: center;
         color: $white;
